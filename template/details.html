@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+            <div class="shadow card" >
+
+  <div class="card-body">
+    <h5 class="card-title">{{cheat.name}}</h5>
+    <p class="card-text">{{cheat.priority}}</p>
+      <p><b>{{cheat.date}}</b></p>
+    <a href="{% url 'delete' cheat.id %}" class="btn btn-danger">Done</a>
+       <a href="{% url 'update' cheat.id %}" class="btn btn-success">update</a>
+  </div>
+</div>
+
+
+
+
+{% endblock %}
